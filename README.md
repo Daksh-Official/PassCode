@@ -1,12 +1,89 @@
-# React + Vite
+# 🔐 PassCode – Password Manager
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A secure and simple password manager built with **React, Express, and MongoDB**.  
+This project also contains a **LocalStorage-only version** for quick testing and demonstration.  
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- Save, edit, and delete passwords securely
+- Copy username & password with one click
+- Two versions available:
+  - **MERN stack version** → Uses MongoDB + Express backend for persistence
+  - **LocalStorage version** → Stores passwords in the browser only
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📸 Screenshots
+![Home Page](./screenshot.png)
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend:** Vite+React, TailwindCSS
+- **Backend:** Node.js, Express
+- **Database:** MongoDB
+
+---
+
+## 📦 Installation & Setup
+
+### 1. Clone the repo
+```bash
+git clone https://github.com/Daksh-Official/PassCode.git
+cd PassCode
+```
+
+### 2. Run the MERN Version
+
+Backend (server)
+```
+cd backend
+npm install
+npm run start
+```
+
+Frontend (client)
+```
+cd PassCode
+npm install
+npm run dev
+```
+
+➡️ App will run at http://localhost:5173
+➡️ Backend runs on http://localhost:3000
+
+or 
+
+### 3. Run the Local Storage version
+```
+npm install
+npm run dev
+```
+
+## 🔒 Security Notes
+
+## 1. ⚠️ The MERN version currently uses a local MongoDB instance.
+=> This means all saved passwords are stored together without user accounts.
+=> If used by multiple people, their passwords could mix together.
+=> It should not be used in production without authentication and user separation.
+
+## 2. The LocalStorage version is only for demonstration purposes.
+=> Data is stored in the browser’s local storage.
+=> Clearing browser cache will delete all saved passwords.
+
+## ✨ Future Improvements
+
+1. Add user authentication (JWT / OAuth)
+2. Implement password encryption before saving in DB
+3. Deploy using MongoDB Atlas + Vercel/Render
+4. Separate user data to avoid conflicts
+
+## 🤝 Contributing
+Pull requests are welcome! If you’d like to improve the project, feel free to fork and submit changes.
+
+Made with ❤️ by Daksh.
+
+Note: this is just another practice project so there might not be any future changes. 
