@@ -65,14 +65,14 @@ npm run dev
 
 ## 🔒 Security Notes
 
-## 1. ⚠️ The MERN version currently uses a local MongoDB instance.
-=> This means all saved passwords are stored together without user accounts.
-=> If used by multiple people, their passwords could mix together.
-=> It should not be used in production without authentication and user separation.
+### 1. ⚠️ The MERN version currently uses a local MongoDB instance.
+=> This means all saved passwords are stored together without user accounts.<br>
+=> If used by multiple people, their passwords could mix together.<br>
+=> It should not be used in production without authentication and user separation.<br>
 
-## 2. The LocalStorage version is only for demonstration purposes.
-=> Data is stored in the browser’s local storage.
-=> Clearing browser cache will delete all saved passwords.
+### 2. The LocalStorage version is only for demonstration purposes.
+=> Data is stored in the browser’s local storage.<br>
+=> Clearing browser cache will delete all saved passwords.<br>
 
 ## ✨ Future Improvements
 
